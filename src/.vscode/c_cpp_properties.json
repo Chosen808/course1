@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "name": "linux-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/mnt/c/Users/(808)/Documents/Github/ese-coursera-course1/course1/include",
+        "/mnt/c/Users/(808)/Documents/Github/ese-coursera-course1/course1/include/common",
+        "/mnt/c/Users/(808)/Documents/Github/ese-coursera-course1/course1/include/CMSIS",
+        "/mnt/c/Users/(808)/Documents/Github/ese-coursera-course1/course1/include/msp432"
+      ],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "intelliSenseMode": "linux-gcc-x64",
+      "compilerArgs": [
+        ""
+      ]
+    }
+  ],
+  "version": 4
+}
