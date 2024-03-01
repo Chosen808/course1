@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/mnt/c/Users/(808)/Documents/GitHub/ese-coursera-course1/assessments/m2/src",
-      "program": "/mnt/c/Users/(808)/Documents/GitHub/ese-coursera-course1/assessments/m2/src/build/Debug/outDebug",
+      "cwd": "/mnt/c/Users/(808)/Documents/GitHub/ese-coursera-course1/course1/src",
+      "program": "/mnt/c/Users/(808)/Documents/GitHub/ese-coursera-course1/course1/src/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

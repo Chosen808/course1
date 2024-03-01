@@ -21,10 +21,14 @@
  *
  */
 #include "memory.h"
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /***********************************************************
  Function Definitions
 ***********************************************************/
+
 void set_value(char * ptr, unsigned int index, char value){
   ptr[index] = value;
 }
@@ -48,3 +52,74 @@ void clear_all(char * ptr, unsigned int size){
   set_all(ptr, 0, size);
 }
 
+
+
+uint8_t *my_memmove (uint8_t *src, uint8_t *dst, size_t length)
+{
+  for (int i = 0; i < length; i++)
+  {
+    *dst++ = *src++;
+  }
+
+  return *dst;
+}
+
+uint8_t *my_memcopy (uint8_t *src, uint8_t *dst, size_t length)
+{
+  for (int i = 0; i < length; i++)
+  {
+    *dst++ = src++;
+  }
+
+  return *dst;
+}
+
+uint8_t *my_memset (uint8_t *src, size_t length, uint8_t value)
+{
+  src[sizeof (length)] = value;
+
+  return src[sizeof (length)];
+}
+
+uint8_t *my_memzero (uint8_t *src, size_t length)
+{
+  src[sizeof (length)] = 0;
+
+  return src[sizeof (length)];
+}
+
+uint8_t *my_reverse (uint8_t *src, size_t length)
+{
+  uint8_t copy = 0;
+  uint8_t mask = 1;
+  uint8_t final = 0;
+
+  for (int i = 0, j = length -1; i < length, j > -1; i++, j--)
+  {
+    copy = (*src >> i) & (mask);
+    final = (final) | (copy << j);
+  }
+
+  src = final;
+
+  return src;
+}
+
+int32_t *reserve_words (size_t length)
+{
+  size_t *word = NULL;
+
+  word = (int32_t*) malloc (length * sizeof (int32_t));
+
+  if (word == NULL)
+  {
+    printf ("Not allocated \n");
+  }
+
+  return word;
+}
+
+void free_words (int32_t *src)
+{
+  free (src);
+}

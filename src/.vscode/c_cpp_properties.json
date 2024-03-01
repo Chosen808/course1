@@ -4,10 +4,8 @@
       "name": "linux-gcc-x64",
       "includePath": [
         "${workspaceFolder}/**",
-        "/mnt/c/Users/(808)/Documents/Github/ese-coursera-course1/course1/include",
-        "/mnt/c/Users/(808)/Documents/Github/ese-coursera-course1/course1/include/common",
-        "/mnt/c/Users/(808)/Documents/Github/ese-coursera-course1/course1/include/CMSIS",
-        "/mnt/c/Users/(808)/Documents/Github/ese-coursera-course1/course1/include/msp432"
+        "/mnt/c/Users/(808)/Documents/GitHub/ese-coursera-course1/course1/include",
+        "/mnt/c/Users/(808)/Documents/GitHub/ese-coursera-course1/course1/include/common"
       ],
       "compilerPath": "/usr/bin/gcc",
       "cStandard": "${default}",
